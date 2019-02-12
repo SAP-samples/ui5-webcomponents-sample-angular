@@ -1,0 +1,97 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+:host(ui5-toggle-button) {
+  display: inline-block;
+  min-width: 2.25rem;
+  height: 2.25rem;
+}
+ui5-toggle-button {
+  display: inline-block;
+  width: auto;
+  height: 2.5rem;
+}
+:host(ui5-toggle-button.sapUiSizeCompact) {
+  height: 1.625rem;
+  min-width: 2rem;
+}
+:host(ui5-toggle-button.sapUiSizeCompact) .sapWCIconInButton {
+  font-size: 1rem;
+}
+ui5-toggle-button.sapUiSizeCompact {
+  height: 1.625rem;
+  min-width: 2rem;
+}
+ui5-toggle-button.sapUiSizeCompact .sapWCIconInButton {
+  font-size: 1rem;
+}
+.sapMBtn.sapMToggleBtnPressed.sapMBtnReject {
+  background-color: #a20000;
+  border-color: #a20000;
+  color: #fff;
+}
+.sapMBtn.sapMToggleBtnPressed.sapMBtnReject:active,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnReject:hover {
+  background-color: #880000;
+  border-color: #a20000;
+}
+.sapMBtn.sapMToggleBtnPressed.sapMBtnAccept {
+  background-color: #0d6733;
+  border-color: #0d6733;
+  color: #fff;
+}
+.sapMBtn.sapMToggleBtnPressed.sapMBtnAccept:active,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnAccept:hover {
+  background-color: #0a5128;
+  border-color: #0d6733;
+}
+.sapMBtn.sapMToggleBtnPressed,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnEmphasized,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnTransparent {
+  text-shadow: none;
+  background-color: #0854a0;
+  border-color: #0854a0;
+  color: #fff;
+}
+.sapMBtn.sapMToggleBtnPressed:focus::after,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnEmphasized:focus::after,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnTransparent:focus::after {
+  border-color: #fff;
+}
+.sapMBtn.sapMToggleBtnPressed:active,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnEmphasized:active,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnTransparent:active,
+.sapMBtn.sapMToggleBtnPressed:hover,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnEmphasized:hover,
+.sapMBtn.sapMToggleBtnPressed.sapMBtnTransparent:hover {
+  background-color: #085caf;
+  border-color: #085caf;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */

@@ -1,0 +1,112 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================ */
+/* CSS for control sap.m/Title  */
+/* Base theme                   */
+/* ============================ */
+:host(ui5-title) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sapMTitle {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  min-width: 1px;
+  font-weight: normal;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 0.125rem #fff;
+  white-space: nowrap;
+  vertical-align: bottom;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  box-sizing: border-box;
+  cursor: text;
+}
+.sapMTitle.sapMTitleWrap {
+  white-space: pre-line;
+}
+/* Alignments */
+.sapMTitleAlignBegin {
+  text-align: left;
+  text-align: start;
+}
+[data-sap-ui-wc-root][dir=rtl][data-sap-ui-browser^="ie"] .sapMTitleAlignBegin,
+[data-sap-ui-wc-root][dir=rtl][data-sap-ui-browser^="ed"] .sapMTitleAlignBegin {
+  text-align: right;
+}
+.sapMTitleAlignLeft {
+  text-align: left;
+}
+.sapMTitleAlignEnd {
+  text-align: right;
+  text-align: end;
+}
+[data-sap-ui-wc-root][dir=rtl][data-sap-ui-browser^="ie"] .sapMTitleAlignEnd,
+[data-sap-ui-wc-root][dir=rtl][data-sap-ui-browser^="ed"] .sapMTitleAlignEnd {
+  text-align: left;
+}
+.sapMTitleAlignRight {
+  text-align: right;
+}
+.sapMTitleAlignCenter {
+  text-align: center;
+}
+/* Title levels */
+/* Level H1 */
+.sapMTitleStyleH1 {
+  font-size: 1.625rem;
+}
+/* Level H2 */
+.sapMTitleStyleH2 {
+  font-size: 1.375rem;
+}
+/* Level H3 */
+.sapMTitleStyleH3 {
+  font-size: 1.25rem;
+}
+/* Level H4 */
+.sapMTitleStyleH4 {
+  font-size: 1.125rem;
+}
+/* Level H5 */
+.sapMTitleStyleH5 {
+  font-size: 1rem;
+}
+/* Level H6 */
+.sapMTitleStyleH6 {
+  font-size: 0.875rem;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */

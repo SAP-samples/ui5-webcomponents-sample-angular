@@ -1,0 +1,15 @@
+[data-sap-ui-wc-root].sap-desktop .sapMBtn.sapUiCalHeadPrev:focus > .sapMFocusable,
+[data-sap-ui-wc-root].sap-desktop .sapMBtn.sapUiCalHeadNext:focus > .sapMFocusable {
+  outline: none;
+}
+.sapMBtn:not(.sapMBtnActive).sapUiCalHeadPrev:hover > .sapMBtnTransparent.sapMBtnHoverable,
+.sapMBtn.sapUiCalHeadNext:hover > .sapMBtnTransparent.sapMBtnHoverable {
+  background-color: transparent;
+  border-color: transparent;
+}
+.sapUiCalMonthView {
+  outline: none;
+}
+.sapUiCalItems {
+  outline: none;
+}

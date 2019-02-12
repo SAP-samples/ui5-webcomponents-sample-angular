@@ -1,0 +1,44 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+.sapUiIcon.sapMInputBaseIcon {
+  width: 2.375rem;
+  min-width: 2.375rem;
+  height: 100%;
+  line-height: 2.375rem;
+  vertical-align: middle;
+  cursor: pointer;
+  background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */

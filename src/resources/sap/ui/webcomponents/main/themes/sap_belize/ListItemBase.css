@@ -1,0 +1,134 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* =================================== */
+/* CSS for control sap.m/ListItemBase  */
+/* Base theme                          */
+/* =================================== */
+:host(ui5-li),
+:host(ui5-li-custom) {
+  display: block;
+}
+.sapMLIB {
+  display: -webkit-box;
+  display: flex;
+  height: 3rem;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  background: #ffffff;
+  padding: 0 1rem 0 1rem;
+  box-sizing: border-box;
+}
+.sapMLIBHoverable:hover {
+  background: #f0f0f0;
+}
+.sapMLIB.sapMLIBSelected {
+  background: #e8eff6;
+}
+.sapMLIB.sapMLIBActive {
+  color: #fff;
+  background: #427cac;
+}
+.sapMLIB.sapMLIBHoverable.sapMLIBSelected:hover {
+  background: #dde8f1;
+}
+.sapMLIB.sapMLIBHoverable.sapMLIBSelected.sapMLIBActive:hover {
+  background: #427cac;
+}
+.sapMLIB.sapMLIBFocusable:focus {
+  outline: none;
+}
+.sapMLIB.sapMLIBFocusable:focus:after,
+.sapMLIB.sapMLIBFocusable .sapMLIBContent:focus:after {
+  content: "";
+  border: 1px dotted #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.sapMLIB.sapMLIBActive.sapMLIBFocusable:focus,
+.sapMLIB.sapMLIBActive.sapMLIBFocusable .sapMLIBContent:focus {
+  outline-color: #fff;
+}
+.sapMLIB.sapMLIBTransparent {
+  background: rgba(255, 255, 255, 0);
+}
+.sapMLIB.sapMLIBBorder {
+  border-bottom: 1px solid #e5e5e5;
+}
+.sapMLIB.sapMLIBActive .sapMLIBImgNav {
+  color: #fff;
+}
+.sapMLIBImgNav {
+  -webkit-box-flex: 0;
+  flex: none;
+  width: 3rem;
+  font-size: 0.75rem;
+  color: #878787;
+  text-align: center;
+  box-sizing: border-box;
+}
+.sapMLIBContent {
+  max-width: 100%;
+  min-height: 100%;
+  font-family: "72", Arial, Helvetica, sans-serif;
+}
+/* IE ignores outline-offset. Use an overlay: */
+.sapMLIBLegacyOutline:focus {
+  outline: none;
+  position: relative;
+}
+.sapMLIBLegacyOutline:focus::before {
+  content: "";
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border: 1px dotted #000;
+}
+.sapMLIBActionable,
+.sapMLIBActionable > .sapMLIBImgNav {
+  cursor: pointer;
+}
+.sapMLIBFocusable.sapMLIBLegacyOutline:focus {
+  outline: none;
+}
+:not(.sapMListModeDelete) > .sapMLIB.sapMLIBTypeNavigation {
+  padding-right: 0;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* =================================== */
+/* CSS for control sap.m/ListItemBase  */
+/* Belize theme                        */
+/* =================================== */

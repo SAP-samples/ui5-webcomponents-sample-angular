@@ -1,0 +1,21 @@
+<ui5-list id="todo-list" mode="MultiSelect" (selectionChange)="handleChangeSelection($event)">
+  <ng-container *ngFor="let todo of todos">
+      <ui5-li-custom
+        [key]="todo.id"
+        [id]="todo.id"
+        [selected]="todo.done || undefined"
+        [data-key]="todo.id"
+        ng-class="{ 'hidden': todo.hidden }"
+      >
+
+        <div class="li-content">
+          <span>{{todo.text}} - finish before: {{todo.deadline}}</span>
+          <div>
+            <ui5-button (ui5-press)="handleEdit(todo.id)" class="edit-btn">Edit</ui5-button>
+            <ui5-button type="Negative" (ui5-press)="handleDeleteItem(todo.id)">Delete</ui5-button>
+          </div>
+        </div>
+
+      </ui5-li-custom>
+  </ng-container>
+</ui5-list>

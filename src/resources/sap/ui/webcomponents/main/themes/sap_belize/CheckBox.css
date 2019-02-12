@@ -1,0 +1,230 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* =============================== */
+/* CSS for control sap.m/CheckBox  */
+/* Base theme                      */
+/* =============================== */
+:host(ui5-checkbox) {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+.sapMCb {
+  display: inline-block;
+  position: relative;
+  white-space: normal;
+  box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 0 0 3rem;
+  max-width: 100%;
+  cursor: default;
+}
+.sapMCb:not(.sapMCbBgDis).sapMCbHasLabel:focus:before {
+  pointer-events: none;
+}
+.sapMCb.sapMCbWrapped.sapMCbHasLabel {
+  height: auto;
+}
+.sapMCb.sapMCbDisplayOnly:not(.sapMCbBgDis) {
+  padding-left: 2.375rem;
+}
+[data-sap-ui-wc-root][dir="rtl"] .sapMCb {
+  text-align: right;
+}
+.sapMCb .sapMLabel {
+  cursor: default;
+}
+.sapMCb .sapMLabel.sapMLabelNoText {
+  position: absolute;
+  visibility: hidden;
+  left: -10000px;
+  top: -10000px;
+}
+.sapMCb > label {
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100% /* If you put a CB in a form the with has to be 100% in rtl for text align */;
+}
+.sapMCbBg {
+  background-color: #ffffff;
+  border: solid 0.125rem #bfbfbf;
+  display: inline-block;
+  position: absolute;
+  left: 0.8125rem;
+  top: 0.8125rem;
+  height: 1.125rem;
+  width: 1.125rem;
+  line-height: 1.125rem;
+  padding: 0;
+  text-align: center;
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+  -webkit-focus-ring-color: none;
+}
+.sapMCbBg > .sapMCbMark,
+.sapMCbBg.sapMCbMark > input {
+  font-size: inherit;
+}
+.sapMCbBg.sapMCbMarkChecked:before {
+  content: "\e05b";
+  font-family: "SAP-icons";
+  display: inline-block;
+  color: #878787;
+}
+.sapMCbBg > input {
+  left: 0;
+  -webkit-appearance: none;
+  visibility: hidden;
+}
+[data-sap-ui-wc-root][data-sap-ui-browser^=ff] .sapMCbBg > input {
+  /* in FF the input needs to be positioned exactly behind the visible checkbox for the focus outline */
+  position: absolute;
+}
+/* Read only */
+.sapMCbRo .sapMCbBg {
+  background-color: rgba(242, 242, 242, 0.5);
+  border-color: #cccccc;
+}
+/* Disabled */
+.sapMCbBgDis {
+  opacity: 0.5;
+}
+.sapMCbBg.sapMCbBgDis.sapMCbMarkChecked:before {
+  color: rgba(66, 124, 172, 0.25);
+}
+/* Hoverable */
+.sapMCbHoverable:hover {
+  border-color: #427cac;
+  background: #ffffff;
+}
+/* Display only */
+.sapMCbDisplayOnly {
+  font-family: "SAP-icons";
+}
+.sapMCbDisplayOnly .sapMCbBg {
+  background-color: initial;
+  border: none;
+  margin: 0.125rem;
+}
+.sapMCbDisplayOnly .sapMCbBg:before {
+  content: "\e19a";
+}
+.sapMCbDisplayOnly .sapMCbBg.sapMCbMarkChecked:before {
+  color: #333333;
+  content: "\e03f";
+}
+/* Value states */
+.sapMCb.sapMCbWarn .sapMCbBg {
+  background-color: #ffffff;
+  border-color: #f9a429;
+}
+.sapMCb.sapMCbWarn .sapMCbBg.sapMCbMarkChecked:before {
+  color: #000000;
+}
+.sapMCb.sapMCbErr .sapMCbBg {
+  background-color: #ffffff;
+  border-color: #ee0000;
+}
+.sapMCb.sapMCbErr .sapMCbBg.sapMCbMarkChecked:before {
+  color: #ee0000;
+}
+.sapMCbBg.sapMCbMarkChecked:before {
+  color: #427cac;
+}
+/* CheckBox focus */
+.sapMCb:focus {
+  outline: none;
+}
+[data-sap-ui-wc-root].sap-desktop .sapMCbBg:focus,
+[data-sap-ui-wc-root].sap-desktop .sapMCbBg:active,
+[data-sap-ui-wc-root].sap-desktop .sap-desktop .sapMCbBg.sapMCbBgDis:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: none;
+}
+[data-sap-ui-wc-root].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus > .sapMCbBg {
+  outline-width: 1px;
+  outline-style: dotted;
+  outline-color: #000;
+}
+[data-sap-ui-wc-root].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbDisplayOnly).sapMCbHasLabel:focus:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.6875rem;
+  bottom: 0.6875rem;
+  left: 0.6875rem;
+  right: 0;
+  border: 1px dotted #000;
+}
+/* TODO remove after 1.62 version */
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus > .sapMCbBg,
+[data-sap-ui-wc-root][data-sap-ui-browser^="ed"].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus > .sapMCbBg {
+  outline-style: dashed;
+}
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbDisplayOnly).sapMCbHasLabel:focus:before,
+[data-sap-ui-wc-root][data-sap-ui-browser^="ed"].sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbDisplayOnly).sapMCbHasLabel:focus:before {
+  border: 1px dashed #000;
+}
+/* Compact size */
+.sapUiSizeCompact .sapMCb {
+  height: 2rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+}
+.sapUiSizeCompact .sapMCb.sapMCbWrapped.sapMCbHasLabel {
+  height: auto;
+}
+.sapUiSizeCompact .sapMCbBg {
+  left: 0.5rem;
+  top: 0.5rem;
+  height: 0.75rem;
+  width: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.625rem;
+  border-radius: 0;
+}
+.sapUiSizeCompact .sapMCb.sapMCbDisplayOnly:not(.sapMCbBgDis) {
+  padding-left: 2rem;
+}
+[data-sap-ui-wc-root].sap-desktop.sapUiSizeCompact .sapMCb:not(.sapMCbBgDis).sapMCbHasLabel:focus:before {
+  top: 0.365rem;
+  bottom: 0.365rem;
+  left: 0.365rem;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* =============================== */
+/* CSS for control ui5-checkbox    */
+/* sap_belize theme                */
+/* =============================== */

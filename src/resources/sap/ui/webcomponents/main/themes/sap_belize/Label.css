@@ -1,0 +1,91 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================ */
+/* CSS for control ui5-label    */
+/* Base theme                   */
+/* ============================ */
+:host(ui5-label) {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.sapMLabel {
+  color: #666666;
+  font-size: 0.875rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: text;
+}
+.sapMLabelBold,
+.sapMLabel.sapMLabelBold {
+  font-weight: bold;
+}
+.sapMLabelMaxWidth {
+  max-width: 100%;
+}
+.sapMLabelRequired:before {
+  content: "*";
+  color: #c14646;
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative;
+  vertical-align: middle;
+  line-height: 0;
+}
+.sapMLabel.sapMLabelMaxWidth.sapMLabelWrapped {
+  margin: 0.875rem 0;
+  line-height: 1.4rem;
+}
+/* Label Wrapping */
+.sapMLabel.sapMLabelWrapped {
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Label as ui5-checkbox and ui5-radiobutton text */
+:host(ui5-label.labelInCheckbox) .sapMLabel,
+:host(ui5-label.labelInRadioButton) .sapMLabel {
+  cursor: default;
+}
+:host(ui5-label.labelInCheckbox) .sapMLabel.sapMLabelMaxWidth.sapMLabelWrapped.sapMLabelWrapped {
+  margin: 0.675rem 0;
+}
+:host(ui5-label.labelInCheckbox) .sapUiSizeCompact .sapMLabel.sapMLabelMaxWidth.sapMLabelWrapped.sapMLabelWrapped {
+  margin: 0.25rem 0;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* ============================ */
+/* CSS for control sap.m/Label  */
+/* Belize theme                 */
+/* ============================ */

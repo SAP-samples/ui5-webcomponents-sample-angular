@@ -1,0 +1,179 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================ */
+/* CSS for control sap.m/Panel  */
+/* Base theme                   */
+/* ============================ */
+:host(ui5-panel) {
+  display: block;
+}
+ui5-panel {
+  display: block;
+}
+.sapMPanel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+.sapMPanel > header {
+  display: flex;
+}
+.sapMPanel > header ui5-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  align-self: center;
+  color: #346187;
+  transition: transform 0.4s ease-out;
+}
+.sapMPanel > header ui5-icon.sapMPanelIconExpanded {
+  transform: rotate(90deg);
+}
+.sapMPanelHdr {
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+  /*
+	* To improve readability Mobile Safari automatically increases
+	* the size of small text so let's disable this
+	*/
+  -webkit-text-size-adjust: none;
+  font-weight: normal;
+  font-size: 1.125rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: transparent;
+}
+.sapMPanelContent {
+  padding: 0.625rem 1rem 1.375rem 1rem;
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: normal;
+  /* This is needed in order to remove the additional outline added by tabindex=-1*/
+}
+.sapMPanelContent:focus {
+  outline: none;
+}
+.sapMPanelExpandablePart {
+  clear: both;
+}
+.sapMPanelWrappingDiv,
+.sapMPanelWrappingDivTb {
+  position: relative;
+}
+/* if Panel is expandable, we do not wish toolbar to come with own border */
+.sapMPanelWrappingDivTb > .sapMTB {
+  border-width: 0;
+}
+.sapMPanelWrappingDiv.sapMPanelWrappingDivExpanded {
+  border-bottom-width: 0;
+}
+[data-sap-ui-wc-root].sap-tablet .sapUiFioriObjectPage > section > .sapMPanel,
+[data-sap-ui-wc-root].sap-desktop .sapUiFioriObjectPage > section > .sapMPanel {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr,
+.sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB {
+  padding-left: 0;
+  margin-left: 3rem;
+}
+.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr > :first-child,
+.sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB > :first-child {
+  margin-left: 0;
+}
+/* mixin call for creating container content padding classes (arguments: rootContainer, contentSelector) */
+.sapMPanel.sapUiContentPadding > .sapMPanelContent {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+@media (max-width: 599px) {
+  .sapMSplitContainerHideMode > .sapMSplitContainerDetail .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent,
+  .sapMSplitContainerPortrait > .sapMSplitContainerDetail .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent,
+  .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent {
+    padding: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sapMSplitContainerHideMode > .sapMSplitContainerDetail .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent,
+  .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1024px) {
+  .sapMSplitContainerHideMode > .sapMSplitContainerDetail .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent,
+  .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+}
+.sapMSplitContainerMaster .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent {
+  padding: 0;
+}
+.sapMSplitContainerDetail .sapMPanel.sapUiResponsiveContentPadding > .sapMPanelContent {
+  padding: 1rem;
+}
+.sapMPanel.sapUiNoContentPadding > .sapMPanelContent {
+  padding: 0;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* ================================== */
+/* Theme CSS for control sap.m/Panel  */
+/* Belize theme                       */
+/* ================================== */
+.sapMPanelBGSolid {
+  background-color: #ffffff;
+}
+.sapMPanelBGTranslucent {
+  /* In order to avoid over-styling, we need to change the default behavior to transparent for belize.
+	We cannot change it via the design property, because this change will be backward incompatible.*/
+  background-color: transparent;
+}
+.sapMPanelBGTransparent {
+  background-color: transparent;
+}
+/* if Panel is not expandable, we do wish header to come with own border */
+.sapMPanel > .sapMPanelHdr,
+.sapMPanelWrappingDiv,
+.sapMPanelWrappingDivTb {
+  border-bottom: 1px solid #cccccc;
+}
+.sapMPanelContent:not(.sapMPanelBGTransparent) {
+  border-bottom: 1px solid #cccccc;
+}

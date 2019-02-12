@@ -1,0 +1,191 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ================================== */
+/* CSS for control sap.m/RadioButton  */
+/* Base theme                         */
+/* ================================== */
+:host(ui5-radiobutton) {
+  max-width: 100%;
+}
+.sapMRb {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  outline: none;
+  max-width: 100%;
+  /* Selected */
+  /* Disabled */
+  /* Disabled on focus */
+  /* Focused */
+  /* Read only */
+  /* Error state */
+  /* Warning state */
+  /* Inner */
+  /* Label */
+}
+.sapMRb.sapMRbSel .sapMRbSvgInner {
+  fill: #0a6ed1;
+}
+.sapMRb.sapMRbDis {
+  opacity: 0.5;
+}
+.sapMRb.sapMRbDis:focus:before {
+  display: none;
+}
+.sapMRb:focus:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: .625rem;
+  bottom: .625rem;
+  left: .625rem;
+  right: .625rem;
+  pointer-events: none;
+  border: 1px dotted #000;
+}
+.sapMRb.sapMRbHasLabel:focus:before {
+  right: 0;
+}
+.sapMRb.sapMRbRo.sapMRbSel .sapMRbSvgInner {
+  fill: #6a6d70;
+}
+.sapMRb.sapMRbRo .sapMRbSvgOuter {
+  fill: rgba(242, 242, 242, 0.5);
+  stroke: #979ea6;
+}
+.sapMRb.sapMRbErr.sapMRbSel .sapMRbSvgInner {
+  fill: #bb0000;
+}
+.sapMRb.sapMRbErr .sapMRbSvgOuter,
+.sapMRb.sapMRbErr:hover .sapMRbInner.sapMRbHoverable:hover .sapMRbSvgOuter {
+  stroke: #bb0000;
+  fill: #fff;
+}
+.sapMRb.sapMRbWarn.sapMRbSel .sapMRbSvgInner {
+  fill: #000000;
+}
+.sapMRb.sapMRbWarn .sapMRbSvgOuter,
+.sapMRb.sapMRbWarn:hover .sapMRbInner.sapMRbHoverable:hover .sapMRbSvgOuter {
+  stroke: #e9730c;
+  fill: #fff;
+}
+.sapMRb .sapMRbInner {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1rem;
+  /* override font size of the message dialog */
+  height: 3rem;
+  width: 3rem;
+  /* Focused */
+  /* Hovered */
+}
+.sapMRb .sapMRbInner:focus {
+  outline: none;
+}
+.sapMRb .sapMRbInner.sapMRbHoverable:hover .sapMRbSvgOuter {
+  fill: #fff;
+  stroke: #0854a0;
+}
+.sapMRb .sapMRbInner input {
+  margin: 0;
+  /* FF puts margin */
+  -webkit-appearance: none;
+  visibility: hidden;
+}
+.sapMRb ui5-label.labelInRadioButton {
+  width: calc(100% - 3rem);
+  padding-right: 1px;
+  vertical-align: top;
+  height: 3rem;
+  line-height: 3rem;
+  cursor: default;
+}
+/* SVG */
+.sapMRbSvg {
+  height: 3rem;
+  width: 3rem;
+  pointer-events: none;
+}
+.sapMRbSvg .sapMRbSvgOuter {
+  stroke: #89919a;
+}
+.sapMRbSvg .sapMRbSvgInner {
+  fill: none;
+}
+/* Compact size */
+.sapUiSizeCompact .sapMRb {
+  height: 2rem;
+}
+.sapUiSizeCompact .sapMRb:focus:before {
+  top: .375rem;
+  bottom: .375rem;
+  left: .375rem;
+  right: .325rem;
+}
+.sapUiSizeCompact .sapMRb.sapMRbHasLabel:focus:before {
+  right: 0;
+}
+.sapUiSizeCompact .sapMRb .sapMRbInner {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sapUiSizeCompact .sapMRb .sapMRbInner .sapMRbSvg {
+  height: 1rem;
+  width: 1rem;
+  line-height: 1rem;
+}
+.sapUiSizeCompact .sapMRb .sapMRbInner .sapMRbSvgOuter {
+  r: 6;
+  cx: 8;
+  cy: 8;
+}
+.sapUiSizeCompact .sapMRb .sapMRbInner .sapMRbSvgInner {
+  r: 3;
+  cx: 8;
+  cy: 8;
+}
+.sapUiSizeCompact .sapMRb ui5-label.labelInRadioButton {
+  line-height: 2rem;
+  height: 2rem;
+  width: calc(100% - 2rem + 1px);
+}
+/* ListItem Context */
+:host(ui5-radiobutton.radioButtonInListItem) .sapMRb .sapMRbInner .sapMRbSvgOuter {
+  fill: #fff;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */
+/* ================================== */
+/* CSS for control sap.m/RadioButton  */
+/* Belize theme                       */
+/* ================================== */

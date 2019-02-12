@@ -1,0 +1,48 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */
+.sapWCTableCell {
+  overflow: hidden;
+  padding: .25rem .0625rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sapWCTableCellWithBorder {
+  border-bottom: 1px solid #E5E5E5;
+}
+.sapWCTableCellFirst {
+  padding-left: 1rem;
+}
+.sapWCTableCellLast {
+  padding-right: 1rem;
+}

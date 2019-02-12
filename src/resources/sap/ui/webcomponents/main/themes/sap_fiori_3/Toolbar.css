@@ -1,0 +1,206 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================== */
+/* CSS for control sap.m/Toolbar  */
+/* Base theme                     */
+/* ============================== */
+:host(ui5-toolbar) {
+  display: block;
+}
+ui5-toolbar {
+  display: block;
+}
+.sapMIBar.sapMTB .sapMBarChild {
+  margin-right: 0.25rem;
+}
+.sapMTB {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  height: 3rem;
+  background: transparent;
+}
+.sapMTB:focus {
+  outline: 0;
+}
+.sapMTBStandard {
+  border-bottom: 1px solid #d9d9d9;
+}
+/* Transparent Toolbar Context */
+.sapMTB-Transparent-CTX.sapMTB {
+  padding-left: 0.75rem;
+}
+/* Info Toolbar Context */
+.sapMIBar.sapMTB.sapMTB-Info-CTX > :first-child,
+.sapMIBar.sapMTB.sapMTB-Info-CTX > :last-child {
+  margin: 0;
+  padding: 0 0.5rem;
+}
+.sapMIBar.sapMTB.sapMTB-Info-CTX > :last-child.sapUiIcon {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sapMTBActive,
+.sapMTBActive > * {
+  cursor: pointer;
+}
+.sapMTBShrinkItem {
+  min-width: 2.5rem;
+  /* default min-width value for the shrinkable items */
+}
+/* NewFlex */
+.sapMTBNewFlex {
+  display: -webkit-flex;
+  display: flex;
+}
+.sapMTBNewFlex > * {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.sapMTBNewFlex > .sapMTBShrinkItem {
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+}
+/* OldFlex */
+.sapMTBOldFlex {
+  display: -webkit-box;
+}
+.sapMTBOldFlex > .sapMTBShrinkItem:not(.sapMFlexBox) {
+  /* old flex spec does not honour percentual width for non-block level elements */
+  /* @TODO: can we set the display of unknown item */
+  display: block;
+}
+.sapMTBOldFlex.sapMTBOverflow > .sapMTBShrinkItem {
+  /* shrinking hack for the old flex spec */
+  -webkit-box-flex: 1;
+}
+.sapMTB.sapMTBOldFlex > * {
+  /* old align-items: center does not respect margins and vertical align values */
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-top: 0;
+  /* float has no effect on a flexible item */
+  float: none;
+}
+/*** Toolbar inside of Form as Form- and Container- header ***/
+.sapUiFormContainerToolbar > .sapMTB {
+  border-bottom: none;
+  padding: 0;
+}
+.sapUiGridHeader > .sapMTB > .sapMBarChild:first-child,
+.sapUiGridTitle > th > .sapMTB > .sapMBarChild:first-child,
+.sapUiFormResLayout.sapUiFormToolbar > .sapMTB > .sapMBarChild:first-child,
+.sapUiRLContainer > .sapMTB > .sapMBarChild:first-child {
+  margin-left: 0;
+}
+.sapUiGridHeader > .sapMTB > .sapMBarChild:last-child,
+.sapUiGridTitle > th > .sapMTB > .sapMBarChild:last-child,
+.sapUiFormResLayout.sapUiFormToolbar > .sapMTB > .sapMBarChild:last-child,
+.sapUiRLContainer > .sapMTB > .sapMBarChild:last-child {
+  margin-right: 0;
+}
+/* Solid Toolbar Context */
+.sapMTB-Solid-CTX.sapMTB {
+  background: #fafafa;
+}
+/* Info Toolbar Context */
+.sapMTB-Info-CTX.sapMTB {
+  background: #0f828f;
+  color: #fff;
+}
+.sapMTB-Info-CTX.sapMTBActive:hover {
+  background: #0e7681;
+}
+.sapMTB-Info-CTX.sapMTBActive:active {
+  background: #0854a0;
+}
+/********** COMPACT DESIGN ************/
+/* toolbar has 2rem height in compact mode */
+.sapUiSizeCompact .sapMTB {
+  height: 2rem;
+}
+/* class used to get a height of 3rem in compact mode */
+.sapUiSizeCompact .sapMTB.sapMTBHeader-CTX {
+  height: 3rem;
+}
+/* default min-width value for the shrinkable items */
+.sapUiSizeCompact .sapMTBShrinkItem,
+.sapUiSizeCondensed .sapUiTableCell .sapMTBShrinkItem {
+  min-width: 2rem;
+}
+.sapFDynamicPageTitleContent-CTX .sapMTB {
+  border-bottom: none;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */
+/* ============================== */
+/* CSS for control sap.m/Toolbar  */
+/* Belize theme                   */
+/* ============================== */
+[data-sap-ui-wc-root].sap-desktop .sapMTBActive:focus {
+  outline: 1px dotted #000;
+  outline-offset: -0.125rem;
+}
+/* Info Toolbar Context */
+.sapMTB-Info-CTX.sapMTB {
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-bottom: none;
+}
+[data-sap-ui-wc-root].sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus {
+  outline-color: #fff;
+}
+/* IE ignores outline-offset. Use an overlay: */
+/* TODO remove after 1.62 version */
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"].sap-desktop .sapMTBActive:focus {
+  outline: none;
+  position: relative;
+}
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"].sap-desktop .sapMTBActive:focus:before {
+  content: " ";
+  box-sizing: border-box;
+  width: calc(100% - 0.0625rem);
+  height: calc(100% - 0.0625rem);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0.0625rem dashed #000;
+  pointer-events: none;
+}
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"].sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus:before {
+  border-color: #fff;
+}

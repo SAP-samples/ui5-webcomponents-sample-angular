@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.ui.webcomponents.main</name>
+  <vendor>SAP SE</vendor>
+  <copyright>${copyright}</copyright>
+  <version>${version}</version>
+
+  <documentation>SAPUI5 library with main web components.</documentation>
+
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.webcomponents.base</libraryName>
+    </dependency>
+  </dependencies>
+
+</library>

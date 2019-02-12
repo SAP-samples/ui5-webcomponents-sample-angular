@@ -1,0 +1,41 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+.sapWCTableColumn {
+  padding: 0.25rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sapWCTableColumnFirst {
+  padding-left: 1rem;
+}
+.sapWCTableColumnLast {
+  padding-right: 1rem;
+}

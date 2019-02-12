@@ -1,0 +1,152 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ================================= */
+/* CSS for control sap.ui.core/Icon  */
+/* Base theme                        */
+/* ================================= */
+:host(ui5-icon) {
+  display: inline-block;
+}
+:host(ui5-icon) .sapUiIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ui5-icon {
+  display: inline-block;
+}
+ui5-icon .sapUiIcon {
+  width: 100%;
+  height: 100%;
+}
+.sapUiIcon {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 1;
+}
+.sapUiIconPointer {
+  cursor: pointer;
+}
+.sapUiIcon:focus {
+  outline: 1px dashed #000;
+  /* keep the outline within the area of the icon */
+  outline-offset: -1px;
+}
+/*
+ * IE 11 and Edge (version < 15) don't support outline-offset.
+ * The outline is implemented using the ::after pseudo element.
+ *
+ * Edge 15 is already released but can't be upgraded automatically,
+ * therefore the approach is still used for all Edge versions.
+ */
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"] .sapUiIcon:focus,
+[data-sap-ui-wc-root][data-sap-ui-browser^="ed"] .sapUiIcon:focus {
+  outline: none;
+}
+[data-sap-ui-wc-root][data-sap-ui-browser^="ie"] .sapUiIcon[tabindex]:focus::after,
+[data-sap-ui-wc-root][data-sap-ui-browser^="ed"] .sapUiIcon[tabindex]:focus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px dashed #000;
+}
+.sapUiIcon::before {
+  content: attr(data-sap-ui-icon-content);
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+ * The mirroring of icon is done on the pesudo element and not the root DOM.
+ * Because:
+ *  1. All direction related css styles are flipped in RTL, for example padding-left
+ *   is changed to padding right in RTL.
+ *  2. The mirroring of an icon in RTL mode flips the css style again which results
+ *   in the wrong direction.
+ *  3. Custom CSS style should be set on the root DOM and not the pesudo element.
+ */
+[data-sap-ui-wc-root][dir=rtl] .sapUiIconMirrorInRTL:not(.sapUiIconSuppressMirrorInRTL)::before,
+[data-sap-ui-wc-root][dir=rtl] .sapUiIconMirrorInRTL:not(.sapUiIconSuppressMirrorInRTL)::after {
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  /* Safari and Chrome */
+  display: inline-block;
+  /* pesudo element has display: inline by default and can't apply the transform css style for RTL mode*/
+}
+/**
+ * The Default color for Icon which always points to the variable across themes.
+ * Therefore it's defined in the base theme.
+ */
+.sapUiIconColorDefault {
+  color: #0a6ed1;
+}
+.sapUiIconColorContrast {
+  color: #fff;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */
+/* ================================= */
+/* CSS for control sap.ui.core/Icon  */
+/* Belize theme                      */
+/* ================================= */
+.sapUiIconColorNeutral {
+  color: #6a6d70;
+}
+.sapUiIconColorCritical {
+  color: #e9730c;
+}
+.sapUiIconColorPositive {
+  color: #107e3e;
+}
+.sapUiIconColorNegative {
+  color: #bb0000;
+}
+.sapUiIconBGColorNeutral {
+  background-color: #6a6d70;
+}
+.sapUiIconBGColorCritical {
+  background-color: #e9730c;
+}
+.sapUiIconBGColorPositive {
+  background-color: #107e3e;
+}
+.sapUiIconBGColorNegative {
+  background-color: #bb0000;
+}
+.sapUiIconBGColorContrast {
+  background-color: #0854a0;
+}
