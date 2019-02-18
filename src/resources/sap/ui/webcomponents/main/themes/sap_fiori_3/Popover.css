@@ -1,0 +1,102 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* shared mixin for arrow shadow*/
+.sapMPopover {
+  position: fixed;
+  z-index: 10;
+}
+.sapMPopoverArr {
+  pointer-events: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  overflow: hidden;
+}
+.sapMPopoverArr:after {
+  content: " ";
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+/* pointing upward arrow */
+.sapMPopoverArrUp {
+  /* offset */
+  left: calc(50% - 0.5625rem);
+  /* position */
+  top: -0.5rem;
+  height: 0.5625rem;
+}
+.sapMPopoverArrUp:after {
+  margin: 0.1875rem 0 0 0.1875rem;
+  box-shadow: -0.375rem 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.3), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
+}
+/* pointing right arrow */
+.sapMPopoverArrRight {
+  /* offset */
+  top: calc(50% - 0.5625rem);
+  /* position */
+  right: -0.5625rem;
+  width: 0.5625rem;
+}
+.sapMPopoverArrRight:after {
+  margin: 0.1875rem 0 0 -0.375rem;
+  box-shadow: -0.375rem -0.375rem 0.75rem 0 rgba(0, 0, 0, 0.3), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
+}
+/* pointing downward arrow */
+.sapMPopoverArrDown {
+  /* offset */
+  left: calc(50% - 0.5625rem);
+  /* position */
+  height: 0.5625rem;
+}
+.sapMPopoverArrDown:after {
+  margin: -0.375rem 0 0 0.125rem;
+  box-shadow: 0.375rem -0.375rem 0.75rem 0 rgba(0, 0, 0, 0.3), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
+}
+/* pointing left arrow */
+.sapMPopoverArrLeft {
+  /* position */
+  left: -0.5625rem;
+  top: calc(50% - 0.5625rem);
+  width: 0.5625rem;
+  height: 1rem;
+}
+.sapMPopoverArrLeft:after {
+  margin: 0.125rem 0 0 0.25rem;
+  box-shadow: 0.375rem 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.3), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
+}
+.sapMPopoverArr.sapMPopoverArrHidden {
+  display: none;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */

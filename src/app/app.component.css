@@ -1,0 +1,24 @@
+.app-content {
+    padding: 0 1rem;
+}
+
+.dialog-content {
+    width: 320px;
+    padding: 2rem;
+}
+
+.title-textarea {
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+}
+
+.date-edit-fields {
+    margin-top: 1rem;
+}
+
+.dialog-footer {
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}

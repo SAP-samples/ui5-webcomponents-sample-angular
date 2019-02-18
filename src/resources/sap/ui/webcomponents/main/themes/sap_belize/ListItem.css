@@ -1,0 +1,78 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ======================================= */
+/* CSS for ListItem                        */
+/* Base theme                              */
+/* ======================================= */
+.sapMSLI.sapMLIBActive .sapMSLITitle {
+  color: #fff;
+}
+.sapMSLI .sapMSLITitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #333333;
+}
+.sapMSLI .sapMSLIImg {
+  margin: 0.5rem 0.75rem 0.5rem 0rem;
+  height: 2rem;
+  width: 2rem;
+}
+.sapMSLI .sapMLIBContent {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+  flex: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+/* Compact size */
+.sapUiSizeCompact .sapMSLI {
+  height: 2rem;
+}
+.sapUiSizeCompact .sapMSLI .sapMSLITitle {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+.sapUiSizeCompact .sapMSLI .sapMSLIImg {
+  margin-top: 0.55rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* ======================================= */
+/* CSS for ListItem                        */
+/* Belize theme                            */
+/* ======================================= */

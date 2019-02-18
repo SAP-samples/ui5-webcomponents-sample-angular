@@ -1,0 +1,65 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.sapMDialogParent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sapMDialog {
+  display: flex;
+  flex-direction: column;
+}
+.sapMDialogSection {
+  flex-grow: 1;
+  display: flex;
+}
+.sapMDialog.sapMDialogStretched {
+  top: 5%;
+  bottom: 5%;
+  left: 3.5%;
+  right: 3.5%;
+  min-width: 0;
+  min-height: 0;
+}
+.sap-phone .sapMDialog.sapMDialogStretched {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */

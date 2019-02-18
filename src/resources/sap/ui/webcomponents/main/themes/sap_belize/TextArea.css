@@ -1,0 +1,121 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.sapWCTextArea {
+  height: 3rem;
+  background: transparent;
+  display: inline-block;
+  vertical-align: top;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.sapWCTextAreaMirror ~ .sapWCTextAreaInner {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+.sapWCTextAreaGrowing.sapWCTextAreaNoMaxLines .sapWCTextAreaInner,
+.sapWCTextAreaGrowing.sapWCTextAreaNoMaxLines .sapWCTextAreaMirror {
+  overflow: hidden;
+}
+.sapWCTextAreaMirror {
+  line-height: 1.4;
+  visibility: hidden;
+  width: 100%;
+  word-break: break-all;
+  padding: 0.5625rem 0.6875rem;
+  font-size: 0.875rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  white-space: pre-wrap;
+}
+.sapWCTextAreaInner {
+  width: 100%;
+  margin: 0;
+  padding: 0.5625rem 0.6875rem;
+  line-height: 1.4;
+  box-sizing: border-box;
+  color: #000;
+  background: #ffffff;
+  border: 1px solid #bfbfbf;
+  outline: none;
+  font-size: 0.875rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  overflow: auto;
+  resize: none;
+}
+.sapWCTextAreaInner:focus::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+.sapWCTextAreaGrowing.sapWCTextAreaNoCols .sapWCTextAreaInner {
+  overflow: hidden;
+  width: 100%;
+}
+.sapWCTextAreaInner::-webkit-input-placeholder {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.sapWCTextAreaInner::-moz-placeholder {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.sapWCTextAreaInner:-ms-input-placeholder {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.sapWCTextAreaWithCounter .sapWCTextAreaInner {
+  height: calc(100% - 16px);
+}
+.sapWCTextAreaCounter {
+  text-align: right;
+  font-size: 0.875rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+}
+.sapCustomTextAreaWarningInner {
+  border: 1px solid;
+  background: #ffffff;
+  border-color: #f9a429;
+}
+.sapWCTextAreaContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.sapWCTextAreaExceededText {
+  float: right;
+  overflow: hidden;
+  padding: 0.125rem 0.125rem 0.5rem;
+  font-family: "72", Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */

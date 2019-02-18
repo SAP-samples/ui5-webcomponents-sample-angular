@@ -1,0 +1,1 @@
+{"_":".sapMTBSpacer {\n  /* should never have padding/margin/border */\n  margin: 0 !important;\n  padding: 0 !important;\n  border: 0 !important;\n  /* without height chrome ignores the element */\n  height: 1px;\n}\n.sapMTBSpacerFlex {\n  -webkit-flex-grow: 1;\n  -webkit-box-flex: 1;\n  flex: auto;\n}\n"}

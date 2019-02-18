@@ -1,0 +1,61 @@
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+/* ============================= */
+/* Global Base parameters        */
+/* ============================= */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* ============================= */
+/* Base theme                    */
+/* ============================= */
+.sapWCTableRow {
+  display: grid;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.sapWCTableRow:focus {
+  outline: 1px solid #000;
+  outline-offset: -3px;
+  outline-style: dotted;
+}
+.sapWCTablePopinRow {
+  padding: 0.25rem 1rem;
+  grid-column-start: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sapWCTablePopinTitle {
+  color: #32363a;
+}
+.sapMWCTableRowCellContainer {
+  height: 100%;
+}
+.sapWCTableRowWithBorder {
+  border-bottom: 1px solid #ededed;
+}
+/* ============================= */
+/* Global Belize parameters      */
+/* ============================= */
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*darken(@sapBrandColor, 10); // no contrast function allowed because background can be gradient*/
+/* darken(@sapButton_Background, 30); //should be #ababab */
+/* contrast(@sapButton_Background, darken(@sapHighlightColor, 10), @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold); //should be #346187 */

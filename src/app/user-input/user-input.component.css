@@ -1,0 +1,22 @@
+.create-todo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #b3b3b3;
+    box-sizing: border-box;
+}
+
+.auto-width {
+    width: auto;
+}
+
+#add-input {
+    flex: auto;
+}
+
+#date-picker {
+    margin: 0 0.5rem;
+}
+
