@@ -2,7 +2,7 @@
 
 # UI5 Web Components Angular Sample Application
 
-[Angular]( https://angular.io/) sample application to demonstrate the usage of the [UI5 Web Components]( https://github.com/SAP/ui5-webcomponents). It shows how to bind properties, to subscribe to events, using nested components and the build.
+[Angular]( https://angular.io/) sample application to demonstrate the usage of the [UI5 Web Components]( https://github.com/SAP/ui5-webcomponents). It shows how to bind properties, to subscribe to events, using nested components and the bootstrapped Angular build.
  
 This project was bootstrapped with [Angular CLI](https://cli.angular.io/).
  
@@ -10,7 +10,7 @@ This project was bootstrapped with [Angular CLI](https://cli.angular.io/).
 - [Node.js](https://nodejs.org/) (**version 8.5 or higher** ⚠️)
 
 ## Getting started
-1. Clone this repository and navigate into it
+1. [Clone this repository](https://help.github.com/articles/cloning-a-repository/) using the [GitHub Command line tool](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and navigate into the downloaded directory.
     ```sh
     git clone https://github.com/SAP/ui5-webcomponents-sample-angular.git
     cd ui5-webcomponents-sample-angular
@@ -20,7 +20,7 @@ This project was bootstrapped with [Angular CLI](https://cli.angular.io/).
     npm install
     ```
 
-1. Start a local server and run the application (http://localhost:4200)
+1. Start a local server and run the application. (The running application can be found here:  http://localhost:4200)
     ```sh
     npm start
     ```
