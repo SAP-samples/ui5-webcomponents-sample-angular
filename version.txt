@@ -1,0 +1,5 @@
+commit 969967f3ee5735c725690e5e924ac010f7418c21
+Author: Adrian Bobev <adrian.bobev@gmail.com>
+Date:   Tue Feb 19 12:46:39 2019 -0800
+
+    chore: enable auto deploy to gh-pages (#2)
