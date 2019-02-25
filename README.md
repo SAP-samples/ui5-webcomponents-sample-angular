@@ -59,7 +59,10 @@ A custom configuration for UI5 Web Components should be provided in the html:
 Than press event for ```ui5-button```, ```ui5-togglebutton```, ```ui5-icon``` and ```ui5-link``` should be attached with ```(ui5-press)``` instead of ```(press)```
  
 ### Configure Angular Build
-To build the Angular Application with UI5 Web Components, a custom Webpack configuration should be provided. You can follow the steps described by [this article](https://codeburst.io/customizing-angular-cli-6-build-an-alternative-to-ng-eject-a48304cd3b21).
+When UI5 Web Components are used they include all of its translation files and CLDR data files in the application bundle.
+In order to decrease the bundle size of the application a custom Webpack configuration should be provided. 
+
+You can follow the steps described by [this article](https://github.com/manfredsteyer/ngx-build-plus#getting-started).
  
 The content of the ```extra-webpack.config.js``` file should be:
  
@@ -69,7 +72,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: [/cldr\/.*\.json$/, /.*\.properties$/],
+          test: [/cldr\/.*\.json$/, /i18n\/.*\.json$/],
           loader: 'file-loader',
           options: {
             name: 'static/media/[name].[hash:8].[ext]',
