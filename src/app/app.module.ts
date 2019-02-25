@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { ListComponent } from './list/list.component';
 
+import "@ui5/webcomponents-base/src/sap/ui/webcomponents/base/browsersupport/Edge";
 // UI5 Web Components used
 import '@ui5/webcomponents/dist/Button';
 import '@ui5/webcomponents/dist/Toolbar';
