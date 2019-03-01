@@ -25,6 +25,33 @@ This project was bootstrapped with [Angular CLI](https://cli.angular.io/).
     npm start
     ```
 
+## Browser support
+
+Currently only Chrome, Safari and Firefox support Web Components natively.
+
+If your application should run on browsers without native Web Components support (Edge and/or IE11), import one the following modules before your first Web Component import: 
+
+### Edge only
+
+```js
+import "@ui5/webcomponents-base/src/sap/ui/webcomponents/base/browsersupport/Edge";
+```
+
+### Edge and IE11
+
+```js
+import "@ui5/webcomponents-base/src/sap/ui/webcomponents/base/browsersupport/IE11";
+```
+
+*Note:* Importing the module for IE11 support automatically enables Edge support as well, so there is no need to import them both explicitly.
+
+Example:
+
+```js
+import "@ui5/webcomponents-base/src/sap/ui/webcomponents/base/browsersupport/IE11"; // This will enable Edge and IE11 support for all Web Components below
+import "@ui5/webcomponents/dist/Button"; // loads ui5-button
+import "@ui5/webcomponents/dist/Label"; // loads ui5-label
+```
 
 ## Noteworthy
  
@@ -59,7 +86,10 @@ A custom configuration for UI5 Web Components should be provided in the html:
 Than press event for ```ui5-button```, ```ui5-togglebutton```, ```ui5-icon``` and ```ui5-link``` should be attached with ```(ui5-press)``` instead of ```(press)```
  
 ### Configure Angular Build
-To build the Angular Application with UI5 Web Components, a custom Webpack configuration should be provided. You can follow the steps described by [this article](https://github.com/manfredsteyer/ngx-build-plus#getting-started).
+When UI5 Web Components are used they include all of their translation files and CLDR data files in the application bundle.
+In order to decrease the bundle size of the application a custom Webpack configuration should be provided. 
+
+You can follow the steps described by [this article](https://github.com/manfredsteyer/ngx-build-plus#getting-started).
  
 The content of the ```webpack.partial.js``` file should be:
  
@@ -69,7 +99,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: [/cldr\/.*\.json$/, /.*\.properties$/],
+          test: [/cldr\/.*\.json$/, /i18n\/.*\.json$/],
           loader: 'file-loader',
           options: {
             name: 'static/media/[name].[hash:8].[ext]',
