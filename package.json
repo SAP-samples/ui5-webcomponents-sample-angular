@@ -3,8 +3,8 @@
   "version": "0.7.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --extra-webpack-config webpack.partial.js",
+    "build": "ng build --extra-webpack-config webpack.partial.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,14 +21,14 @@
     "@angular/router": "~7.2.1",
     "@ui5/webcomponents": "^0.7.0",
     "core-js": "^2.5.4",
+    "ngx-build-plus": "^7.7.6",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-builders/custom-webpack": "^7.2.0",
     "@angular-builders/dev-server": "^7.2.1",
-    "@angular-devkit/build-angular": "^0.12.2",
+    "@angular-devkit/build-angular": "^0.13.3",
     "@angular/cli": "~7.2.2",
     "@angular/compiler-cli": "~7.2.1",
     "@angular/language-service": "~7.2.1",
