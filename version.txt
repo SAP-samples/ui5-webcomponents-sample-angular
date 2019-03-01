@@ -1,5 +1,5 @@
-commit 969967f3ee5735c725690e5e924ac010f7418c21
+commit a7b1505fa7d9bc38fabb7b17752f3e1b1ccdaec3
 Author: Adrian Bobev <adrian.bobev@gmail.com>
-Date:   Tue Feb 19 12:46:39 2019 -0800
+Date:   Fri Mar 1 17:14:27 2019 +0200
 
-    chore: enable auto deploy to gh-pages (#2)
+    chore: update custom webpack configuration (#4)
