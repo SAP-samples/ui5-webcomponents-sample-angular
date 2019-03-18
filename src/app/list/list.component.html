@@ -9,7 +9,7 @@
       >
 
         <div class="li-content">
-          <span>{{todo.text}} - finish before: {{todo.deadline}}</span>
+          <span class="li-content-text">{{todo.text}} - finish before: {{todo.deadline}}</span>
           <div>
             <ui5-button (ui5-press)="handleEdit(todo.id)" class="edit-btn">Edit</ui5-button>
             <ui5-button type="Negative" (ui5-press)="handleDeleteItem(todo.id)">Delete</ui5-button>

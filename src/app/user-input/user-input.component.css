@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-.auto-width {
+.add-todo-element-width {
     width: auto;
 }
 
@@ -17,6 +17,19 @@
 }
 
 #date-picker {
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 0 0.5rem;
 }
 
+@media(max-width: 600px) {
+    .create-todo-wrapper {
+        flex-direction: column;
+    }
+
+    .add-todo-element-width  {
+        width: 100%;
+    }
+
+    #date-picker {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}

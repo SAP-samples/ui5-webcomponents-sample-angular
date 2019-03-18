@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.li-content-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .edit-btn {
     margin-right: 1rem;
 }
