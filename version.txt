@@ -1,5 +1,5 @@
-commit c654f60794e128a245f1a2a6722249120c98a39a
-Author: Adrian Bobev <adrian.bobev@gmail.com>
-Date:   Tue Apr 23 16:56:28 2019 +0300
+commit 0696fde73e512848856ea7fd9e4e330e73aae7e9
+Author: ilhan orhan <ilhan.myumyun@sap.com>
+Date:   Tue Apr 23 18:50:15 2019 +0300
 
-       chore: update ui5-webcomponents version to 0.10.0 (#10)
+    chore: remove toolbar from edit dialog (#12)
