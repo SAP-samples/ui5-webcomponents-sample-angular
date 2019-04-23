@@ -27,9 +27,9 @@
         <ui5-datepicker #dialogDatePicker format-pattern="dd/MM/yyyy" [value]="oItemToEdit.deadline"></ui5-datepicker>
     </div>
   </div>
-    <ui5-toolbar class="dialog-footer" data-ui5-slot="footer">
+    <div class="dialog-footer">
       <ui5-button type="Transparent" (ui5-press)="closeDialog()">Cancel</ui5-button>
       <ui5-button type="Emphasized" (ui5-press)="saveDialog()">Save</ui5-button>
-    </ui5-toolbar>
+	</div>
   </ui5-dialog>
 </aside>
