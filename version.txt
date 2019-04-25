@@ -1,5 +1,5 @@
-commit 0696fde73e512848856ea7fd9e4e330e73aae7e9
+commit d7448e924c2cc0dbfc121739f953aa7e9a73891c
 Author: ilhan orhan <ilhan.myumyun@sap.com>
-Date:   Tue Apr 23 18:50:15 2019 +0300
+Date:   Thu Apr 25 10:30:09 2019 +0300
 
-    chore: remove toolbar from edit dialog (#12)
+    chore: adopt v0.10.1 (#13)
