@@ -29,7 +29,7 @@ export class ListComponent implements OnInit {
 
   handleChangeSelection($event) {
     this.changeSelection.emit({
-      selected: $event.detail.items
+      selected: $event.detail.selectedItems
     });
   }
 }
