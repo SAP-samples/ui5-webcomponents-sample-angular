@@ -1,5 +1,5 @@
-commit bad459c39f7ffcb351eb8d937ad06dd776d0b882
-Author: Martin <martin.r.hristov@gmail.com>
-Date:   Thu May 23 10:40:57 2019 +0300
+commit c3e566d6f34b363f269d682b3ed6bc25f12e3d18
+Author: Filip Siderov <filip.siderov@sap.com>
+Date:   Wed Jun 12 11:30:31 2019 +0300
 
-    chore: adopt v0.11.0 (#14)
+    chore: update ui5 web components version to 0.12 (#15)
