@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { ListComponent } from './list/list.component';
 
-import "@ui5/webcomponents-base/src/browsersupport/Edge";
+import "@ui5/webcomponents-base/dist/features/browsersupport/Edge";
 // UI5 Web Components used
 import '@ui5/webcomponents/dist/Button';
 import '@ui5/webcomponents/dist/ShellBar';
@@ -19,7 +19,6 @@ import '@ui5/webcomponents/dist/Panel';
 import '@ui5/webcomponents/dist/Dialog';
 import '@ui5/webcomponents/dist/Label';
 import '@ui5/webcomponents/dist/TextArea';
-import '@ui5/webcomponents/dist/InputSuggestions';
 import '@ui5/webcomponents/dist/StandardListItem';
 
 @NgModule({
