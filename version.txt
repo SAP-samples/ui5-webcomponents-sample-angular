@@ -1,5 +1,5 @@
-commit c3e566d6f34b363f269d682b3ed6bc25f12e3d18
+commit b356d606160b76507e744a097603d53379431fb8
 Author: Filip Siderov <filip.siderov@sap.com>
-Date:   Wed Jun 12 11:30:31 2019 +0300
+Date:   Mon Dec 2 14:00:25 2019 +0200
 
-    chore: update ui5 web components version to 0.12 (#15)
+    update ui5 web components version to 1.0.0-rc.4 (#18)
