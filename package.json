@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~7.2.1",
     "@angular/platform-browser-dynamic": "~7.2.1",
     "@angular/router": "~7.2.1",
-    "@ui5/webcomponents": "^0.12.0",
+    "@ui5/webcomponents": "^1.0.0-rc.4",
     "core-js": "^2.5.4",
     "ngx-build-plus": "^7.7.6",
     "rxjs": "~6.3.3",
