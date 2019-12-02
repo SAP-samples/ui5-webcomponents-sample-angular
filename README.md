@@ -83,7 +83,7 @@ A custom configuration for UI5 Web Components should be provided in the html:
 </script>
 ```
  
-Than press event for ```ui5-button```, ```ui5-togglebutton```, ```ui5-icon``` and ```ui5-link``` should be attached with ```(ui5-press)``` instead of ```(press)```
+Than press event for ```ui5-button```, ```ui5-togglebutton```, ```ui5-icon``` and ```ui5-link``` should be attached with ```(ui5-click)``` instead of ```(click)```
  
 ### Configure Angular Build
 When UI5 Web Components are used they include all of their translation files and CLDR data files in the application bundle.

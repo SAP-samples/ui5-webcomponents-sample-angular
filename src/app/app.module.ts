@@ -9,7 +9,7 @@ import { ListComponent } from './list/list.component';
 import "@ui5/webcomponents-base/dist/features/browsersupport/Edge";
 // UI5 Web Components used
 import '@ui5/webcomponents/dist/Button';
-import '@ui5/webcomponents/dist/ShellBar';
+import '@ui5/webcomponents-fiori/dist/ShellBar';
 import '@ui5/webcomponents/dist/Title';
 import '@ui5/webcomponents/dist/Input';
 import '@ui5/webcomponents/dist/DatePicker';
