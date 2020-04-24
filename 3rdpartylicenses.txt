@@ -13,13 +13,13 @@ Apache-2.0
 @ui5/webcomponents-base
 Apache-2.0
 
-@ui5/webcomponents-core
-Apache-2.0
-
 @ui5/webcomponents-fiori
 Apache-2.0
 
 @ui5/webcomponents-icons
+Apache-2.0
+
+@ui5/webcomponents-localization
 Apache-2.0
 
 @ui5/webcomponents-theme-base
