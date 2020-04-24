@@ -1,5 +1,5 @@
-commit 799a5721a1b4674625eb10b0d9064f6a5a3806a1
+commit 27b33dd75a491172327d178dab6f1f8582b32253
 Author: ilhan orhan <ilhan.myumyun@sap.com>
-Date:   Fri Apr 24 10:54:01 2020 +0300
+Date:   Fri Apr 24 11:49:55 2020 +0300
 
-    chore: migrate to rc.6 (#20)
+    refer to next version (#21)
