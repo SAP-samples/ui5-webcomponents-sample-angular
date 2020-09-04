@@ -1,13 +1,12 @@
-commit c0c666d754690fbf41cff24e415cfc4a6a08751b
+commit a0926bbe659fddfd37d7ac62ef7423931e1ebd71
 Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
-Date:   Fri Sep 4 18:49:06 2020 +0300
+Date:   Fri Sep 4 19:06:25 2020 +0300
 
-    chore(deps): bump handlebars from 4.4.3 to 4.7.6 (#26)
+    chore(deps): bump acorn from 6.3.0 to 6.4.1 (#29)
     
-    Bumps [handlebars](https://github.com/wycats/handlebars.js) from 4.4.3 to 4.7.6.
-    - [Release notes](https://github.com/wycats/handlebars.js/releases)
-    - [Changelog](https://github.com/handlebars-lang/handlebars.js/blob/master/release-notes.md)
-    - [Commits](https://github.com/wycats/handlebars.js/compare/v4.4.3...v4.7.6)
+    Bumps [acorn](https://github.com/acornjs/acorn) from 6.3.0 to 6.4.1.
+    - [Release notes](https://github.com/acornjs/acorn/releases)
+    - [Commits](https://github.com/acornjs/acorn/compare/6.3.0...6.4.1)
     
     Signed-off-by: dependabot[bot] <support@github.com>
     
