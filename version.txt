@@ -1,14 +1,5 @@
-commit 54141da911c497a1dd722f1463830058d5e42e57
-Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
-Date:   Mon Oct 12 13:51:53 2020 +0300
+commit 49014d06db396272775383d4b566d948bf4bc217
+Author: ilhan orhan <ilhan.myumyun@sap.com>
+Date:   Tue Oct 13 07:46:57 2020 +0300
 
-    chore(deps): bump http-proxy from 1.18.0 to 1.18.1 (#30)
-    
-    Bumps [http-proxy](https://github.com/http-party/node-http-proxy) from 1.18.0 to 1.18.1.
-    - [Release notes](https://github.com/http-party/node-http-proxy/releases)
-    - [Changelog](https://github.com/http-party/node-http-proxy/blob/master/CHANGELOG.md)
-    - [Commits](https://github.com/http-party/node-http-proxy/compare/1.18.0...1.18.1)
-    
-    Signed-off-by: dependabot[bot] <support@github.com>
-    
-    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+    chore: update license info (#31)
