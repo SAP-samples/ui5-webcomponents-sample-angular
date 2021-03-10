@@ -1,5 +1,5 @@
-commit 49014d06db396272775383d4b566d948bf4bc217
-Author: ilhan orhan <ilhan.myumyun@sap.com>
-Date:   Tue Oct 13 07:46:57 2020 +0300
+commit 663f9b4ad9323d65f935957a618ea706e7c5702f
+Author: Filip Siderov <filip.siderov@sap.com>
+Date:   Wed Mar 10 10:47:32 2021 +0200
 
-    chore: update license info (#31)
+    feat: update to version 1.0.0-rc.12 (#34)
