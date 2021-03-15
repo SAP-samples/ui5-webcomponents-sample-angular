@@ -21,7 +21,6 @@
     "@angular/router": "~7.2.1",
     "@ui5/webcomponents": "next",
     "@ui5/webcomponents-fiori": "next",
-    "@ui5/webcomponents-ie11": "^0.30.0",
     "core-js": "^2.5.4",
     "ngx-build-plus": "^7.7.6",
     "rxjs": "~6.3.3",
