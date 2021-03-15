@@ -1,5 +1,5 @@
-commit 663f9b4ad9323d65f935957a618ea706e7c5702f
+commit 06b7426b4a30436e4cdaf7bf34942b4b80141f8c
 Author: Filip Siderov <filip.siderov@sap.com>
-Date:   Wed Mar 10 10:47:32 2021 +0200
+Date:   Mon Mar 15 14:53:49 2021 +0200
 
-    feat: update to version 1.0.0-rc.12 (#34)
+    fix: fix dependencies (#36)
