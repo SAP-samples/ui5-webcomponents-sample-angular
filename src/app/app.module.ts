@@ -6,8 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { ListComponent } from './list/list.component';
 
-import "@ui5/webcomponents-ie11/dist/features/IE11.js";
-
 // UI5 Web Components used
 import '@ui5/webcomponents/dist/Button';
 import '@ui5/webcomponents-fiori/dist/ShellBar';
