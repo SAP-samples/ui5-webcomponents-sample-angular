@@ -19,11 +19,14 @@
     "@angular/platform-browser": "~12.2.6",
     "@angular/platform-browser-dynamic": "~12.2.6",
     "@angular/router": "~12.2.6",
+    "@ui5/webcomponents": "next",
+    "@ui5/webcomponents-fiori": "next",
     "core-js": "^2.5.4",
     "ngx-build-plus": "^12.2.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "webpack-dev-server": "^4.2.1",
+    "zone.js": "^0.11.4"
   },
   "devDependencies": {
     "@angular-builders/dev-server": "^7.3.1",

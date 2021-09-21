@@ -13,9 +13,6 @@
         "build": {
           "builder": "ngx-build-plus:build",
           "options": {
-            "customWebpackConfig": {
-              "path": "./extra-webpack.config.js"
-            },
             "outputPath": "dist/ui5-webcomponents-sample-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
