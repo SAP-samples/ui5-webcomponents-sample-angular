@@ -78,7 +78,7 @@ export class AppComponent {
     this.oItemToEdit = this.todos.find((oTodo) => {
       return oTodo.id === $event.id;
     });
-    this.oDialog.nativeElement.open();
+    this.oDialog.nativeElement.show();
   }
 
   handleUndone($event) {
