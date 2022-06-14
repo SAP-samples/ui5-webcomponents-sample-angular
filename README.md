@@ -1,4 +1,5 @@
 ![UI5 logo](/docs/images/UI5_logo_wide.png)
+[![CI](https://github.com/SAP-samples/ui5-webcomponents-sample-angular/actions/workflows/ci.yaml/badge.svg)](https://github.com/SAP-samples/ui5-webcomponents-sample-angular/actions/workflows/ci.yaml)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/ui5-webcomponents-sample-angular)](https://api.reuse.software/info/github.com/SAP-samples/ui5-webcomponents-sample-angular)
 
 # UI5 Web Components Angular Sample Application
