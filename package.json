@@ -7,7 +7,10 @@
     "build": "ng build --extra-webpack-config webpack.partial.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+	"lint:commit": "commitlint -e",
+    "e2e": "ng e2e",
+    "hooks:pre-push": "npm run lint:commit",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -34,10 +37,13 @@
     "@angular/cli": "~12.2.6",
     "@angular/compiler-cli": "~12.2.6",
     "@angular/language-service": "~12.2.6",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@types/jasmine": "~3.3.7",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.18",
     "codelyzer": "~4.5.0",
+    "husky": "^8.0.0",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~6.3.4",
