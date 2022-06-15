@@ -7,7 +7,7 @@ import { UserInputComponent } from './user-input/user-input.component';
 import { ListComponent } from './list/list.component';
 
 // UI5 Web Components used
-import {setTheme } from "@ui5/webcomponents-base/dist/config/Theme";
+import {setTheme } from '@ui5/webcomponents-base/dist/config/Theme';
 import '@ui5/webcomponents/dist/Button';
 import '@ui5/webcomponents/dist/Title';
 import '@ui5/webcomponents/dist/Input';
@@ -21,19 +21,19 @@ import '@ui5/webcomponents/dist/TextArea';
 import '@ui5/webcomponents/dist/StandardListItem';
 import '@ui5/webcomponents-fiori/dist/ShellBar';
 import '@ui5/webcomponents-fiori/dist/Assets';
-setTheme("sap_horizon");
+setTheme('sap_horizon');
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    ListComponent,
-    UserInputComponent
-  ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		ListComponent,
+		UserInputComponent
+	],
+	schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+		imports: [
+		BrowserModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
