@@ -1,20 +1,20 @@
 .li-content {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .li-content-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .edit-btn {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .full-width {
-    width: 100%;
+	width: 100%;
 }

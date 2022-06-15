@@ -1,25 +1,31 @@
 .app-content {
-    padding: 0 1rem;
+	padding: 0 1rem;
 }
 
 .dialog-content {
-    max-width: 320px;
-    padding: 2rem;
+	max-width: 320px;
+	padding: 2rem;
 }
 
 .title-textarea {
-    height: 100px;
-    display: inline-block;
-    width: 100%;
+	height: 100px;
+	display: inline-block;
+	width: 100%;
 }
 
 .date-edit-fields {
-    margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
 }
 
 .dialog-footer {
-    padding: 0.25rem 0.25rem 0 0.25rem;
-    border-top: 1px solid #d9d9d9;
-    display: flex;
-    justify-content: flex-end;
+	padding: 0.25rem 0.25rem 0 0.25rem;
+	border-top: 1px solid #d9d9d9;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dialog-footer-btn--cancel {
+	margin-inline-end: 0.25rem;
 }

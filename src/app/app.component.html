@@ -1,35 +1,34 @@
 <app-header></app-header>
 <section class="app-content">
-  <app-user-input (addTodo)="handleAddTodo($event)"></app-user-input>
-  <app-list [todos]="unDone"
-    (editPressed)="editItem($event)"
-    (deletedItem)="removeItem($event)"
-    (changeSelection)="handleUndone($event)"></app-list>
+	<app-user-input (addTodo)="handleAddTodo($event)"></app-user-input>
+	<app-list [todos]="unDone"
+	(editPressed)="editItem($event)"
+	(deletedItem)="removeItem($event)"
+	(changeSelection)="handleUndone($event)"></app-list>
 
-  <ui5-panel [collapsed]="!this.done.length" header-text="Completed tasks">
-    <app-list [todos]="done" (editPressed)="editItem($event)"
-      (deletedItem)="removeItem($event)"
-      (changeSelection)="handleDone($event)"></app-list>
-  </ui5-panel>
-
+	<ui5-panel [collapsed]="!this.done.length" header-text="Completed tasks">
+	<app-list [todos]="done" (editPressed)="editItem($event)"
+		(deletedItem)="removeItem($event)"
+		(changeSelection)="handleDone($event)"></app-list>
+	</ui5-panel>
 </section>
 
 <aside>
-  <ui5-dialog #dialog header-text="Edit Todo item" >
-    <div class="dialog-content">
-      <div class="edit-wrapper">
-        <ui5-label>Title:</ui5-label>
-        <ui5-textarea #dialogInput class="title-textarea" maxlength="24" show-exceeded-text [value]="oItemToEdit.text"></ui5-textarea>
-    </div>
-
-    <div class="edit-wrapper date-edit-fields">
-        <ui5-label>Date:</ui5-label>
-        <ui5-date-picker #dialogDatePicker format-pattern="dd/MM/yyyy" [value]="oItemToEdit.deadline"></ui5-date-picker>
-    </div>
-  </div>
-    <div class="dialog-footer">
-      <ui5-button design="Transparent" (click)="closeDialog()">Cancel</ui5-button>
-      <ui5-button design="Emphasized" (click)="saveDialog()">Save</ui5-button>
+	<ui5-dialog #dialog header-text="Edit Todo" >
+	<div class="dialog-content">
+		<div class="edit-wrapper">
+		<ui5-label>Title:</ui5-label>
+		<ui5-textarea #dialogInput class="title-textarea" maxlength="24" show-exceeded-text [value]="oItemToEdit.text"></ui5-textarea>
 	</div>
-  </ui5-dialog>
+
+	<div class="edit-wrapper date-edit-fields">
+		<ui5-label>Date:</ui5-label>
+		<ui5-date-picker #dialogDatePicker format-pattern="dd/MM/yyyy" [value]="oItemToEdit.deadline"></ui5-date-picker>
+	</div>
+	</div>
+	<div class="dialog-footer">
+		<ui5-button design="Transparent" class="dialog-footer-btn--cancel" (click)="closeDialog()">Cancel</ui5-button>
+		<ui5-button design="Emphasized" class="dialog-footer-btn--save" (click)="saveDialog()">Save</ui5-button>
+	</div>
+	</ui5-dialog>
 </aside>
