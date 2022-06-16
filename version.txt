@@ -1,5 +1,0 @@
-commit 06b7426b4a30436e4cdaf7bf34942b4b80141f8c
-Author: Filip Siderov <filip.siderov@sap.com>
-Date:   Mon Mar 15 14:53:49 2021 +0200
-
-    fix: fix dependencies (#36)
