@@ -1,6 +1,10 @@
 {
   "name": "ui5-webcomponents-sample-angular",
   "version": "0.7.0",
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve --extra-webpack-config webpack.partial.js",

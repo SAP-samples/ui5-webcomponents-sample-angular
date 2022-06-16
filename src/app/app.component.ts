@@ -33,7 +33,7 @@ export class AppComponent {
 			text: 'Go to the gym',
 			id: 3,
 			deadline: '24/7/2018',
-			done: true
+			done: false
 		},
 		{
 			text: 'Buy milk',
@@ -45,7 +45,7 @@ export class AppComponent {
 			text: 'Eat some fruits',
 			id: 5,
 			deadline: '29/7/2018',
-			done: false
+			done: true
 		}
 	];
 	id = 5;
@@ -117,7 +117,7 @@ export class AppComponent {
 	}
 
 	closeDialog() {
-	this.oDialog.nativeElement.close();
+		this.oDialog.nativeElement.close();
 	}
 
 	saveDialog() {
