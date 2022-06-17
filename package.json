@@ -29,6 +29,7 @@
     "@ui5/webcomponents": "^1.4.0",
     "@ui5/webcomponents-base": "^1.4.0",
     "@ui5/webcomponents-fiori": "^1.4.0",
+    "@ui5/webcomponents-icons": "^1.4.0",
     "core-js": "^2.5.4",
     "ngx-build-plus": "^12.2.0",
     "rxjs": "~6.3.3",

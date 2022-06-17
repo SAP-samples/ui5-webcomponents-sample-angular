@@ -1,5 +1,21 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: var(--sapBackgroundColor);
+}
+
 .app-content {
+	height: 100%;
 	padding: 0 1rem;
+}
+
+.list-todos-wrapper {
+	margin: 2rem 0;
+}
+
+.list-todos-panel {
+	margin: 2rem 0;
 }
 
 .dialog-content {

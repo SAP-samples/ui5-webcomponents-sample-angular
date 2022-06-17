@@ -1,5 +1,31 @@
 <header className="app-header">
-	<ui5-shellbar primary-title="UI5 Web Components Angular Sample Application">
+	<ui5-shellbar primary-title="UI5 Web Components Angular Sample Application"
+		show-notifications
+		notifications-count="2">
 		<img src="./assets/images/logo.png" slot="logo">
+		<ui5-shellbar-item icon="palette" text="Theme" ref="themeChangeItem" (click)="handleThemeSettingsToggle($event)"></ui5-shellbar-item>
+		<ui5-avatar slot="profile" size="XS" initials="JD"></ui5-avatar>
 	</ui5-shellbar>
+
+	<ui5-tabcontainer fixed collapsed>
+		<ui5-tab text="My Todos"></ui5-tab>
+	</ui5-tabcontainer>
+
+	<ui5-popover #themeSettingsPopover
+		class="app-bar-theming-popover"
+		placement-type="Bottom"
+		horizontal-align="Right"
+		header-text="Theme"
+	>
+		<ui5-list #themeSelect mode="SingleSelect"(selectionChange)="handleThemeChange($event)">
+			<ui5-li icon="palette" data-theme="sap_horizon" selected>SAP Horizon Morning</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_horizon_dark">SAP Horizon Evening</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_horizon_hcb">SAP Horizon HCB</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_horizon_hcw">SAP Horizon HCW</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_fiori_3">SAP Quartz Light</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_fiori_3_dark">SAP Quartz Dark</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_fiori_3_hcb">SAP Quartz HCB</ui5-li>
+			<ui5-li icon="palette" data-theme="sap_fiori_3_hcw">SAP Quartz HCW</ui5-li>
+		</ui5-list>
+	</ui5-popover>
 </header>

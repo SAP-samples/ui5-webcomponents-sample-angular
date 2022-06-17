@@ -1,15 +1,27 @@
 <app-header></app-header>
 <section class="app-content">
 	<app-user-input (addTodo)="handleAddTodo($event)"></app-user-input>
-	<app-list [todos]="unDone"
-	(editPressed)="editItem($event)"
-	(deletedItem)="removeItem($event)"
-	(changeSelection)="handleUndone($event)"></app-list>
 
-	<ui5-panel [collapsed]="!this.done.length" header-text="Completed Tasks">
-	<app-list [todos]="done" (editPressed)="editItem($event)"
-		(deletedItem)="removeItem($event)"
-		(changeSelection)="handleDone($event)"></app-list>
+	<ui5-panel
+		[collapsed]="!this.unDone.length"
+		header-text="Incompleted Tasks"
+		class="list-todos-panel">
+		<app-list [todos]="unDone"
+			(editPressed)="editItem($event)"
+			(deletedItem)="removeItem($event)"
+			(changeSelection)="handleUndone($event)">
+		</app-list>
+	</ui5-panel>
+	
+	<ui5-panel
+		[collapsed]="!this.done.length"
+		header-text="Completed Tasks"
+		class="list-todos-panel">
+		<app-list [todos]="done"
+			(editPressed)="editItem($event)"
+			(deletedItem)="removeItem($event)"
+			(changeSelection)="handleDone($event)">
+		</app-list>
 	</ui5-panel>
 </section>
 

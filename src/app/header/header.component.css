@@ -1,3 +1,7 @@
+.app-bar-theming-popover {
+	width: 250px;
+}
+
 .header-toolbar {
 	position:sticky;
 	z-index: 42;

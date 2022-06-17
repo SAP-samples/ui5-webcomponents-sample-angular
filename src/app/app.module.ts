@@ -19,7 +19,11 @@ import '@ui5/webcomponents/dist/Dialog';
 import '@ui5/webcomponents/dist/Label';
 import '@ui5/webcomponents/dist/TextArea';
 import '@ui5/webcomponents/dist/StandardListItem';
-import '@ui5/webcomponents-fiori/dist/ShellBar';
+import "@ui5/webcomponents/dist/Tab";
+import "@ui5/webcomponents/dist/TabContainer";
+import "@ui5/webcomponents-fiori/dist/ShellBar";
+import "@ui5/webcomponents-fiori/dist/ShellBarItem";
+import "@ui5/webcomponents-icons/dist/palette.js";
 import '@ui5/webcomponents-fiori/dist/Assets';
 setTheme('sap_horizon');
 @NgModule({
