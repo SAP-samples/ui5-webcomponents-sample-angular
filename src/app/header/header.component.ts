@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
 
 	handleThemeSettingsToggle(event) {
 		this.themeSettingsPopover.nativeElement.showAt(event.detail.targetRef);
-	};
+	}
 
 	handleThemeChange(event) {
-		setTheme(event.detail.selectedItems[0].getAttribute("data-theme"));
+		setTheme(event.detail.selectedItems[0].getAttribute('data-theme'));
 		this.themeSettingsPopover.nativeElement.close();
-	};
+	}
 
 }
