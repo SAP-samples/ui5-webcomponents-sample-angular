@@ -11,6 +11,10 @@
 	white-space: nowrap;
 }
 
+.li-content-actions {
+	display: flex;
+}
+
 .edit-btn {
 	margin-right: 1rem;
 }
