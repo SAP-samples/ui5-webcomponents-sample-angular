@@ -14,3 +14,55 @@
 	margin-right: 1rem;
 	margin-left: 2rem;
 }
+
+.app-bar-profile-popover {
+	width: 250px;
+}
+
+#settings-dialog {
+	max-width: 300px;
+}
+
+.dialog-button {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0.625rem;
+	margin-bottom: -0.425rem;
+}
+
+.profile-settings, .help-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.profile-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1rem;
+}
+
+.app-header-logo {
+	height: 2rem;
+}
+
+.profile-settings-list {
+	margin-top: 1.25rem;
+}
+
+.aligned {
+	align-items: center;
+	gap: 0.725rem;
+}
+
+.help-dialog-text {
+	font-size: 0.875rem;
+}
+
+.profile-rtl-switch {
+	width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}

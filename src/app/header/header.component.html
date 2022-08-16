@@ -1,7 +1,8 @@
-<header className="app-header">
+<header class="app-header">
 	<ui5-shellbar primary-title="UI5 Web Components Angular Sample Application"
 		show-notifications
-		notifications-count="2">
+		notifications-count="2"
+		(profileClick)="handleProfileClick($event)">
 		<img src="./assets/images/logo.png" slot="logo">
 		<ui5-shellbar-item icon="palette" text="Theme" ref="themeChangeItem" (click)="handleThemeSettingsToggle($event)"></ui5-shellbar-item>
 		<ui5-avatar slot="profile" size="XS" initials="JD"></ui5-avatar>
@@ -17,7 +18,7 @@
 		horizontal-align="Right"
 		header-text="Theme"
 	>
-		<ui5-list #themeSelect mode="SingleSelect"(selectionChange)="handleThemeChange($event)">
+		<ui5-list #themeSelect mode="SingleSelect" (selectionChange)="handleThemeChange($event)">
 			<ui5-li icon="palette" data-theme="sap_horizon" selected>SAP Horizon Morning</ui5-li>
 			<ui5-li icon="palette" data-theme="sap_horizon_dark">SAP Horizon Evening</ui5-li>
 			<ui5-li icon="palette" data-theme="sap_horizon_hcb">SAP Horizon HCB</ui5-li>
@@ -28,4 +29,73 @@
 			<ui5-li icon="palette" data-theme="sap_fiori_3_hcw">SAP Quartz HCW</ui5-li>
 		</ui5-list>
 	</ui5-popover>
+
+	<ui5-popover #profileSettingsPopover
+	id="profile-pop"
+	class="app-bar-profile-popover"
+	placement-type="Bottom"
+	horizontal-align="Right"
+	>
+		<div class="profile-settings">
+			<ui5-avatar size="M" initials="JD"></ui5-avatar>
+			<div class="profile-text">
+				<ui5-title level='H3'>John Doe</ui5-title>
+				<ui5-label>Angular Developer</ui5-label>
+			</div>
+		</div>
+
+		<div class="profile-settings-list">
+			<ui5-list mode="SingleSelect" separators="None" (itemClick)="handleProfileSettingsSelect($event)">
+				<ui5-li icon="settings" data-key="settings">Settings</ui5-li>
+				<ui5-li icon="sys-help" data-key="help">Help</ui5-li>
+				<ui5-li icon="log" data-key="sign-out">Sign out</ui5-li>
+			</ui5-list>
+		</div>
+	</ui5-popover>
+
+	<ui5-dialog id="settings-dialog" header-text="Profile Settings" draggable>
+		<div>
+			<div class="profile-rtl-switch centered">
+				<div class="profile-rtl-switch-title">
+					<ui5-label class="profile-rtl-switch-text">RTL</ui5-label>
+				</div>
+				<ui5-switch (change)="handleRtlSwitchChange($event)"></ui5-switch>
+			</div>
+		</div>
+
+		<div class="profile-rtl-switch centered">
+			<div class="profile-rtl-switch-title">
+				<ui5-label class="profile-rtl-switch-text">Compact</ui5-label>
+			</div>
+			<ui5-switch (change)="handleContentDensitySwitchChange($event)"></ui5-switch>
+		</div>
+
+		<div class="dialog-button">
+			<ui5-button (click)="handleSettingsDialogCloseButtonClick($event)" design="Emphasized" >Close</ui5-button>
+		</div>
+	</ui5-dialog>
+
+	<ui5-dialog id="help-dialog" header-text="&#8505; Help">
+		<header class='help-header aligned'>
+			<img class="app-header-logo" alt="logo" slot="logo" src="../../assets/images/logo.png" />
+			<ui5-title level="H5">UI5 Web Components Angular Sample App</ui5-title>
+		</header>
+
+		<p class='help-dialog-text'>
+			<b>Release</b>: b225.20220729335 <br>
+			<b>Server</b>: 31pc212x3132 <br>
+			<b>Timestamp</b>: 2022-07-28T10:29:03.159+0200 <br>
+			<b>Company ID</b>: SAP <br>
+			<b>UI version</b>: SAP Fiori <br>
+			<b>Edition</b>: Enterprise <br>
+			<b>Admin version</b>: Angular Admin <br>
+			<hr />
+			For more information, please visit our <a href="https://github.com/SAP-samples/ui5-webcomponents-sample-angular" target="_blank">documentation</a>.
+		<p>
+
+		<div class="dialog-button">
+			<ui5-button design="Emphasized" (click)="handleHelpDialogCloseButtonClick($event)">Close</ui5-button>
+		</div>
+
+	</ui5-dialog>
 </header>
