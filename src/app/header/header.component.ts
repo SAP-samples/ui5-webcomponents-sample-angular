@@ -33,30 +33,30 @@ export class HeaderComponent implements OnInit {
 
 	handleProfileSettingsSelect(event) {
 		const selectedKey = event.detail.item.getAttribute('data-key');
-		if (selectedKey === "settings") {
-			window["settings-dialog"].show(event.detail.targetRef);
-		 } else if (selectedKey === "help") {
-			window["help-dialog"].show(event.detail.targetRef);
+		if (selectedKey === 'settings') {
+			window['settings-dialog'].show(event.detail.targetRef);
+		 } else if (selectedKey === 'help') {
+			window['help-dialog'].show(event.detail.targetRef);
 		}
 	}
 
 	handleRtlSwitchChange(event) {
-		document.body.dir = event.target.checked ? "rtl" : "ltr";
+		document.body.dir = event.target.checked ? 'rtl' : 'ltr';
 	}
 
 	handleContentDensitySwitchChange(event) {
 		if (event.target.checked) {
-			document.body.classList.add("ui5-content-density-compact");
+			document.body.classList.add('ui5-content-density-compact');
 		} else {
-			document.body.classList.remove("ui5-content-density-compact");
+			document.body.classList.remove('ui5-content-density-compact');
 		}
 	}
 
-	handleSettingsDialogCloseButtonClick(event){
-		window["settings-dialog"].close();
+	handleSettingsDialogCloseButtonClick(event) {
+		window['settings-dialog'].close();
 	}
 
-	handleHelpDialogCloseButtonClick(event){
-		window["help-dialog"].close();
+	handleHelpDialogCloseButtonClick(event) {
+		window['help-dialog'].close();
 	}
 }
