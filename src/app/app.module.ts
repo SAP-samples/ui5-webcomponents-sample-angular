@@ -18,14 +18,23 @@ import '@ui5/webcomponents/dist/CustomListItem';
 import '@ui5/webcomponents/dist/Panel';
 import '@ui5/webcomponents/dist/Dialog';
 import '@ui5/webcomponents/dist/Label';
+import '@ui5/webcomponents/dist/Popover';
 import '@ui5/webcomponents/dist/TextArea';
 import '@ui5/webcomponents/dist/StandardListItem';
 import '@ui5/webcomponents/dist/Tab';
 import '@ui5/webcomponents/dist/TabContainer';
 import '@ui5/webcomponents-fiori/dist/ShellBar';
 import '@ui5/webcomponents-fiori/dist/ShellBarItem';
+import '@ui5/webcomponents/dist/Switch';
 import '@ui5/webcomponents-icons/dist/palette.js';
 import '@ui5/webcomponents-fiori/dist/Assets';
+import '@ui5/webcomponents-icons/dist/settings.js';
+import '@ui5/webcomponents-icons/dist/sys-help.js';
+import '@ui5/webcomponents-icons/dist/log.js';
+import '@ui5/webcomponents-icons/dist/account.js';
+import '@ui5/webcomponents-icons/dist/private.js';
+import '@ui5/webcomponents-icons/dist/loan.js';
+import '@ui5/webcomponents-icons/dist/globe.js';
 setTheme('sap_horizon');
 @NgModule({
 	declarations: [
