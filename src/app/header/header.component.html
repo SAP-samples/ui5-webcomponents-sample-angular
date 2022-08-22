@@ -75,11 +75,17 @@
 		</div>
 	</ui5-dialog>
 
-	<ui5-dialog id="help-dialog" header-text="&#8505; Help">
-		<header class="help-header aligned">
+	<ui5-dialog id="help-dialog">
+
+		<div slot="header" class="help-header" id="header-title-align">
+			<ui5-icon name="sys-help"></ui5-icon>
+				Help
+		</div>
+
+		<div class="help-header" id="header-logo-align">
 			<img class="app-header-logo" alt="logo" slot="logo" src="../../assets/images/logo.png" />
 			<ui5-title level="H5">UI5 Web Components Angular Sample App</ui5-title>
-		</header>
+		</div>
 
 		<p class="help-dialog-text">
 			<b>Release</b>: b225.20220729335 <br>
@@ -90,7 +96,7 @@
 			<b>Edition</b>: Enterprise <br>
 			<b>Admin version</b>: Angular Admin <br>
 			<hr />
-			For more information, please visit our <a href="https://github.com/SAP-samples/ui5-webcomponents-sample-angular" target="_blank">documentation</a>.
+			<span class="help-dialog-text">For more information, please visit our <a href="https://github.com/SAP-samples/ui5-webcomponents-sample-angular" target="_blank">documentation</a>.</span>
 		<p>
 
 		<div class="dialog-button">
